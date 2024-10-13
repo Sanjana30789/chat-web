@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(11, 11, 85);
+    color: antiquewhite;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(12, 55, 147);
+    height: 80px;
+   
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: medium;
+
+}
+
+nav ul li{
+    list-style: none;
+   margin: 0 23px;
+   
+}
+
+nav ul li a{
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(14, 154, 170);
+    font-size: 1.02rem;
+}
+
+
+.left{
+   font-size: 2rem;
+   padding-right: 20%;
+   
+}
+
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 115px 0;
+
+}
+
+.firstsection > div {
+     width: 30%;
+    margin: 23px 0;
+     
+}
+
+.leftsection  {
+    font-size: 3rem;
+    margin: 70px 0;
+    font-weight: bolder;
+    
+   
+    
+}
+
+
+
+.leftsection div{
+    width: 70%;
+    font-weight: bolder;
+}
+
+.rightsection img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    margin-left: 15%;
+ 
+}
+
+.purple{
+    color: rgb(136, 19, 245);
+}
+
+.animated-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s ease-out;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#element{
+    color: blueviolet
+}
+
+
+.secondsection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+
+main hr{
+    border: 0px;
+    background: rgb(42, 121, 217);
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.secondsection h1{
+    font-size: 2rem;
+}
+
+.secondsection .box {
+    background:white;
+   width: 80vw;
+   height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondsection .vertical{
+    height: 93px;
+    width: 1px;
+    background-color: aliceblue;
+    margin :0 100px; 
+}
+
+.image-top{
+    width:30px ;
+    position: relative;
+    top: -32px;
+    left: -9px;
+}
+
+
+.title{
+    position: relative;
+    height: 75px;
+}
+
+/* .description {
+    position: relative;
+    top: 150px;
+} */

@@ -1,0 +1,150 @@
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+  overflow: hidden;
+}
+
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+p {
+    text-align: center;
+    padding-top: 10px;
+    width: 800px;
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: white; /* Ensure the text is dark and visible */
+    transform: skewY(0deg);
+    padding-left: 10px;
+    padding-right: 20px; 
+    animation: fadeInUp 1.2s ease-out; /* Apply the animation */
+}
+
+#header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    transform: skewY(0deg);
+    color: bisque;
+    z-index: 3; /* Above overlay */
+}
+
+main {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 20px; 
+    position: relative; /* Ensure main content is above overlay */
+    z-index: 2; /* Above overlay */
+    
+}
+
+.one {
+    flex: 1; /* Allow this section to grow */
+    display: flex; /* Center the image if needed */
+    justify-content: center; /* Center the image horizontally */
+}
+
+.one img {
+    max-width: 700px; /* Ensure the image fits within its container */
+    height: 600px; 
+    border-radius: 20px;
+    animation: fadeInUp 1.2s ease-out;
+}
+
+
+
+
+.portfolio {
+    padding: 5px 0; /* Add some padding around the section */
+}
+
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between; /* Space between items */
+}
+
+.portfolio-item {
+    width: calc(33.333% - 20px); /* Adjust width to fit three items per row */
+    margin-bottom: 30px; /* Space below each item */
+    position: relative; /* For positioning info over image */
+}
+
+.portfolio-img {
+    overflow: hidden; /* Hide overflow */
+    border-radius: 10px; /* Optional: Add some border-radius for aesthetics */
+}
+
+.portfolio-img img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s; /* Smooth scaling on hover */
+}
+
+.portfolio-item:hover .portfolio-img img {
+    transform: scale(1.05); /* Scale up image on hover */
+}
+
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px; /* Space around text */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: #fff; /* White text for better visibility */
+    text-align: center;
+    border-radius: 0 0 10px 10px; /* Rounded corners at the bottom */
+}
+
+
+#viewbutton{
+    font-size: 30px;
+    text-align: center;
+    margin-left: 50%;
+}
+
+
+.background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent interaction with the background */
+    overflow: hidden;
+  }
+  
+  .star {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    opacity: 0;
+    animation: twinkle 1.5s infinite;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
